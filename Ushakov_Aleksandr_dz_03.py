@@ -8,3 +8,4 @@ def transform_sring(number: int) -> str:
 
 for n in range(1, 101):
     print(transform_sring(n))
+# В результате между строк выводиться None, как ни пытался - не могу убрать(
