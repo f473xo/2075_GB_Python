@@ -5,9 +5,9 @@ def sum_list_1(dataset: list) -> int:
         sum = 0
         elem = dataset[indx]
         while elem != 0:
-            sum = sum = elem % 10
+            sum = elem % 10
             elem = elem // 10
-            return
+            return elem
 
 
     #"""Вычисляет сумму чисел списка dataset, сумма цифр которых делится нацело на 7"""
