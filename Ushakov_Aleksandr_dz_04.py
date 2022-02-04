@@ -6,7 +6,7 @@ def convert_name_extract(list_in: list) -> list:
 
 
 my_list = ['инженер-конструктор Игорь', 'главный бухгалтер МАРИНА', 'токарь высшего разряда нИКОЛАй', 'директор аэлита']
-convert_name_extract(my_list)
+#convert_name_extract(my_list)
 #result = convert_name_extract(my_list)
-#print(result)
+print(result)
 #Не додумался как все в один список в итоге запихать
