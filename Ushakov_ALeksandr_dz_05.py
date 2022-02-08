@@ -8,7 +8,7 @@ adjektives = ['веселый', 'яркий', 'зеленый', 'утопичн�
 def get_jokes(count: int) -> list:
     """Возвращает список шуток в кол-ве count зарандомив их из предложенных списков"""
     for elem in range(count):
-        list_out = (f'{choice(nouns)} {choice(adverbs)} {choice(adjektives)}')
+        list_out = f'{choice(nouns)} {choice(adverbs)} {choice(adjektives)}'
     return list_out
 
 
