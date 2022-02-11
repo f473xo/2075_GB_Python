@@ -1,0 +1,42 @@
+C:\>pip show pillow
+WARNING: Package(s) not found: pillow
+
+C:\>pip install pillow
+Collecting pillow
+  Using cached Pillow-9.0.1-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.0.1
+WARNING: You are using pip version 21.2.4; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\f473\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+C:\>cd PYTHON
+
+C:\PYTHON>python -m venv virt
+
+C:\PYTHON>virt\Scripts\activate.bat
+
+(virt) C:\PYTHON>pip show pillow
+WARNING: Package(s) not found: pillow
+
+(virt) C:\PYTHON>pip install pillow
+Collecting pillow
+  Using cached Pillow-9.0.1-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.0.1
+WARNING: You are using pip version 21.2.4; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\PYTHON\virt\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(virt) C:\PYTHON>pip show pillow
+Name: Pillow
+Version: 9.0.1
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: c:\python\virt\lib\site-packages
+Requires:
+Required-by:
+
+(virt) C:\PYTHON>deactivate
+C:\PYTHON>
