@@ -1,10 +1,10 @@
-from utils import currency_rates
+import utils
 
 
-print(currency_rates("eur"))
-print(currency_rates("gBp"))
-print(currency_rates("KzT"))
-print(currency_rates("noname"))
+print(utils.currency_rates("eur"))
+print(utils.currency_rates("gBp"))
+print(utils.currency_rates("KzT"))
+print(utils.currency_rates("noname"))
 
 """
 85.3574 руб.
