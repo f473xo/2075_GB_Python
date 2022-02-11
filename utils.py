@@ -14,7 +14,3 @@ def currency_rates(code: str) -> float:
             if code in elem:
                 result_value = float(elem.replace('/', '').split('<Value>')[-2].replace(',', '.'))
                 return f'{result_value} руб.'
-
-
-print(currency_rates("UsD"))
-print(currency_rates("noname"))
