@@ -12,7 +12,7 @@ def currency_rates(code: str) -> float:
         value = decoder.split('<Valute ID=')
         for elem in value:
             if code in elem:
-                result_value = float(elem.replace('/', '').split('<Value>')[-2].replace(',', '.'))
+                result_value = float((elem.replace('/', '').split('<Value>')[-2].replace(',', '.')))
                 return f'{result_value} руб.'
 
 
