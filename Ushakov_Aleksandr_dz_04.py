@@ -3,7 +3,7 @@ import utils
 
 print(utils.currency_rates("eur"))
 print(utils.currency_rates("gBp"))
-print(utils.currency_rates("KzT"))
+print(utils.currency_rates("KZT"))
 print(utils.currency_rates("noname"))
 
 """
