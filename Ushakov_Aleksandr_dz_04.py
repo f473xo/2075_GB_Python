@@ -1,12 +1,12 @@
 def val_checker(lmbd_func):
-    def wrapper(func):
-        def process(item):
+    def process(func):
+        def wrapper(item):
             if lmbd_func(item):
                 print(func(item))
             else:
                 raise ValueError(f'Wrong Value {item}')
-        return process
-    return wrapper
+        return wrapper
+    return process
 
 
 @val_checker(lambda x: x > 0)
