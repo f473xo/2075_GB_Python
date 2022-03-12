@@ -16,18 +16,18 @@ class Cell:
 
     def __mul__(self, other):
         if not isinstance(other, Cell):
-            raise TypeError(f'Действие допустимо только для экземпляров того же класса')
+            raise TypeError('Действие допустимо только для экземпляров того же класса')
         return Cell(self.cells * other.cells)
 
     def __truediv__(self, other):
         try:
-            return Cell(int(self.cells // other.cells))
+            return Cell(self.cells // other.cells)
         except ZeroDivisionError:
             print('Деление на ноль недопустимо')
 
     def __floordiv__(self, other):
         try:
-            return Cell(int(self.cells // other.cells))
+            return Cell(self.cells // other.cells)
         except ZeroDivisionError:
             print('Деление на ноль недопустимо')
 
@@ -45,20 +45,19 @@ if __name__ == '__main__':
     print(sub_cell.make_order(6))
 
     mul_cell = cell_2 * cell_3
-    print(mul_cell.cells)  # 30
+    print(mul_cell.cells)
 
     floordiv_cell = cell_2 // cell_3
-    print(floordiv_cell.cells)  # 3
+    print(floordiv_cell.cells)
 
     truediv_cell = cell_1 / cell_2
-    print(truediv_cell.cells)  # 1
+    print(truediv_cell.cells)
 
     try:
         cell_3 - cell_2
     except ValueError as err:
-        print(err)  # недопустимая операция
-
+        print(err)
     try:
         cell_1 * 123
     except TypeError as err:
-        print(err)  # действие допустимо только для экземпляров того же класса
+        print(err)
